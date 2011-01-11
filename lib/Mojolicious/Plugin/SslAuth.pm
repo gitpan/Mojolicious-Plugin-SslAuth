@@ -3,7 +3,7 @@ package Mojolicious::Plugin::SslAuth;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use base 'Mojolicious::Plugin';
 
@@ -47,10 +47,11 @@ L<Mojolicous::Plugin::SslAuth> is a helper for authenticating client ssl certifi
         my $self = shift;
 
         return $self->render_text('ok')
-          if $self->ssl_auth( sub {
-                return 1
-                  if shift->peer_certificate('commonName') eq 'client';
-          } );
+          if $self->ssl_auth(
+            sub {
+                return 1 if shift->peer_certificate('commonName') eq 'client';
+            }
+          );
     };
 
     app->start;
@@ -80,7 +81,7 @@ L<http://github.com/tempire/mojolicious-plugin-sslauth>
 
 =head1 VERSION
 
-0.01
+0.02
 
 =head1 AUTHOR
 
