@@ -4,9 +4,9 @@ author:
   - 'Glen Hinkle <tempire@cpan.org>'
 build_requires: {}
 configure_requires:
-  ExtUtils::MakeMaker: 6.31
+  ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110580'
+generated_by: 'Dist::Zilla version 4.200006, CPAN::Meta::Converter version 2.110930'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,4 +15,6 @@ name: Mojolicious-Plugin-SslAuth
 requires:
   IO::Socket::SSL: 1.39
   Mojolicious: 1.13
-version: 0.03
+resources:
+  repository: git://github.com/tempire/mojolicious-plugin-sslauth.git
+version: 0.04
