@@ -13,8 +13,8 @@ meta-spec:
   version: 1.4
 name: Mojolicious-Plugin-SslAuth
 requires:
-  IO::Socket::SSL: 1.39
-  Mojolicious: 1.13
+  IO::Socket::SSL: 1.44
+  Mojolicious: 1.43
 resources:
   repository: git://github.com/tempire/mojolicious-plugin-sslauth.git
-version: 0.04
+version: 0.05
