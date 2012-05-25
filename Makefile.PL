@@ -9,23 +9,23 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'SSL client certificate auth helper',
-  'AUTHOR' => 'Glen Hinkle <tempire@cpan.org>',
-  'BUILD_REQUIRES' => {},
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30'
+  "ABSTRACT" => "SSL client certificate auth helper",
+  "AUTHOR" => "Glen Hinkle <tempire\@cpan.org>",
+  "BUILD_REQUIRES" => {},
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Mojolicious-Plugin-SslAuth',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Mojolicious::Plugin::SslAuth',
-  'PREREQ_PM' => {
-    'IO::Socket::SSL' => '1.44',
-    'Mojolicious' => '1.43'
+  "DISTNAME" => "Mojolicious-Plugin-SslAuth",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Mojolicious::Plugin::SslAuth",
+  "PREREQ_PM" => {
+    "IO::Socket::SSL" => "1.44",
+    "Mojolicious" => "2.81"
   },
-  'VERSION' => '0.05',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.06",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 
