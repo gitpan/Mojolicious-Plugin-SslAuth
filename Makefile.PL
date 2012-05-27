@@ -23,7 +23,7 @@ my %WriteMakefileArgs = (
     "IO::Socket::SSL" => "1.44",
     "Mojolicious" => "2.81"
   },
-  "VERSION" => "0.06",
+  "VERSION" => "0.07",
   "test" => {
     "TESTS" => "t/*.t"
   }
